@@ -15,25 +15,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-'use strict';
+"use strict";
 
-const React = require('react');
-import { _t } from 'matrix-react-sdk/lib/languageHandler';
+const React = require("react");
+import { _t } from "matrix-react-sdk/lib/languageHandler";
 
 module.exports = React.createClass({
-    displayName: 'VectorAuthFooter',
+    displayName: "VectorAuthFooter",
     statics: {
-        replaces: 'AuthFooter',
+        replaces: "AuthFooter"
     },
 
     render: function() {
-        return (
-            <div className="mx_AuthFooter">
-                <a href="https://medium.com/@RiotChat" target="_blank" rel="noopener">blog</a>
-                <a href="https://twitter.com/@RiotChat" target="_blank" rel="noopener">twitter</a>
-                <a href="https://github.com/vector-im/riot-web" target="_blank" rel="noopener">github</a>
-                <a href="https://matrix.org" target="_blank" rel="noopener">{ _t('powered by Matrix') }</a>
-            </div>
-        );
-    },
+        return <div className="mx_AuthFooter" />;
+    }
 });
